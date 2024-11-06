@@ -1,0 +1,1 @@
+This is an input file to be used for Node.js FileSystem testing.
