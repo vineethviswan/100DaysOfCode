@@ -1,9 +1,12 @@
+/*--------------------------------------------------------------------------------------
+    Day 15 - Perform CRUD operations using MongoDB and the mongodb Nodejs driver             
+----------------------------------------------------------------------------------------*/
 
 const { MongoClient } = require('mongodb');
 
 async function main() {
 
-    const uri = "mongodb+srv://vineethv:ZHbdpOXOJg3tj4n3@peppermintdb.7cxl4.mongodb.net/?retryWrites=true&w=majority&appName=PepperMintDB";
+    const uri = "ConnectionString";
     const client = new MongoClient(uri);    
 
     try {
