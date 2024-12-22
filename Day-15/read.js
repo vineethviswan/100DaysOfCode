@@ -12,7 +12,7 @@ async function main() {
     try {
         await client.connect();
         console.log('MongoDB connected.!');
-        await findOneMovieByName(client, "Gertie the Dinosaur");
+        await findOneMovieByName(client, "New Indian Movie X");
 
     } catch (e) {
         console.error(e);
@@ -26,9 +26,9 @@ main().catch(console.error);
 
 async function findOneMovieByName(client, movieName) {
 
-    const result = await client.db("sample_mflix").collection("movies").findOne({title: movieName});
+    const result = await client.db("sample_mflix:").collection("movies").findOne({title: movieName});
     if(result) {
-        console.log(`Found a movie name : ${result.poster}`);
+        console.log(`Found a movie name : ${result.poster} and id : ${result._id}`);
     } else {
         console.log(`No movies found with name : ${movieName}`);
     }
