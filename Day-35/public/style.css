@@ -1,0 +1,38 @@
+
+/* public/style.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    margin: 30px 30px;
+    padding: 20px;
+  }
+  
+  #messages {
+    list-style-type: none;
+    padding: 0;
+    overflow-y: scroll;
+    flex: 1;
+  }
+  
+  #messages li {
+    margin-bottom: 10px;
+  }
+  
+  #form {
+    display: flex;
+  }
+  
+  #input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  button {
+    width: 80px;
+  }
